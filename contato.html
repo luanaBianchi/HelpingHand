@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Helping Hand </title>
+
+        <!-- Metas -->
+        <meta charset='utf-8'/>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+        <link href="Visualizador/css/estilo.css" rel="stylesheet" type="text/css" />
+        <link href="Visualizador/css/ol.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+
+		
+
+
+    </head>
+    <body>
+        <div id="tudo">
+            <header>
+				<h2> 
+					<span class="menu-anchor"></span>
+					<img src="images/logo.png" />  
+					HELPING HAND
+
+				</h2>
+            </header>    
+    <menu>
+<ul>
+                <li><a class='menu' href="index.html" id="m1"></a></li>
+        <li><a class='menu' href="mapa.html" id="m2"></a></li>
+        <li><a class='menu' href="entidades.html" id="m3"></a></li>
+        <li><a class='menu' href="sobre.html" id="m5"></a>
+        <li><a class='menu' href="registre.html" id="m6"></a></li>
+        <li><a class='menu' href="doe.html" id="m7"></a></li>
+        <li><a class='menu' href="contato.html" id="m8"></a></li>
+</ul>
+</menu>
+
+   
+
+<div id="conteudo">
+<div id="formulario">
+    <div id="fale"></div>
+    <br/>
+    <form method="post" action="http://helpinghandapp.com.br/fabrica_acao.php?controle=helpinghand&acao=emailFim">
+        <label for="nome" id="f"></label>
+        <input type="text" name="nome" id="nome"  required/>
+        <label for="email" id="f1"></label>
+        <input type="text" name="email" id="email"  required/>
+        <label for="texto" id="f2"></label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+        <input class="enviar" type="submit" id="f3"/>
+    </form>
+</div>
+</div>
+    </div>
+    <footer>        
+    </footer>
+</div>
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/textos.js"></script>
+<script src="js/script.js"></script>
+<script>
+    window.console = window.console || function(t) {};
+    window.open = function(){ console.log('window.open is disabled.'); };
+    window.print = function(){ console.log('window.print is disabled.'); };
+    // Support hover state for mobile.
+    if (false) {
+      window.ontouchstart = function(){};
+    }
+ 
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+ 
+    $(document).ready(function () {
+    $('.menu-anchor').on('click touchstart', function (e) {
+        $('html').toggleClass('menu-active');
+        e.preventDefault();
+    });
+});
+    //@ sourceURL=pen.js
+  </script>
+
+    </body>
+</html>
