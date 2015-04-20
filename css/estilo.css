@@ -1,0 +1,290 @@
+body {
+    margin: 0px auto;
+    color: black;
+    font-size: 14px;
+    font-family: century gothic;
+    background-color: #fafafa;
+}
+
+/** Para funcionar o rodapé **/
+html, body {
+    height: 100%;
+}
+
+#tudo {
+    min-height: 100%;
+    position: relative;
+}
+
+/** Cabeçalho **/
+header {
+    margin-bottom: 30px;
+    background-image: url('../images/bg2.png');
+	height: 70px;
+	width: 100%;
+}
+
+/** Menu **/
+  * {
+	margin: 0;
+	padding: 0;
+}
+
+/* Isto é necessário para não haver rolagens horizontais quando movermos os elementos */
+html, body {overflow-x: hidden;}
+
+.menu-anchor {
+	width: 40px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-indent: -9999px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.menu-anchor:before {
+	content: "";
+	display: block;
+	margin: 3px auto;
+	width: 70%;
+	height: 5px;
+	background: #3d281a;
+	box-shadow: 0 9px 0 0 #3d281a, 0 18px 0 0 #3d281a;
+}
+
+.menu-active .menu-anchor {background: transparent}
+
+menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 200px;
+	height: 100%;
+	padding-top: 10px;
+	background: #c33f3f;
+}
+
+menu li a {
+	display: block;
+	margin: 0 10px;
+	padding: 10px;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: normal;
+
+}
+
+menu li a:hover {
+	background: #FFF;
+	color: #d55401;
+}
+
+/*
+	Aqui você esconde o menu para fora da tela 
+	O valor é exatamente a largura da sidebar
+*/
+menu {
+	-webkit-transform: translateX(-200px);
+	-moz-transform: translateX(-200px);
+	-ms-transform: translateX(-200px);
+	transform: translateX(-200px);
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-ms-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+/* Com a classe menu-active na tag HTML */
+.menu-active menu {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.menu-active header, 
+.menu-active .main {
+	-webkit-transform: translateX(200px);
+	-moz-transform: translateX(200px);
+	-ms-transform: translateX(200px);
+	transform: translateX(200px);
+}
+
+/**Texto**/
+h2 {
+	text-align: center;
+	font-size: 25px;
+	color: #3d281a;
+	padding-top: 10px;
+}
+
+h2 img {
+	width: 20px;
+	height: 20px;
+}
+
+h4 {
+	text-align: justify;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+/** Conteúdo **/
+#conteudo {
+    max-width: 740px;
+    min-width: 255px;
+    margin: auto;
+    text-align: center;
+	padding: 0px 30px 0px 30px;
+}
+
+/** Rodapé **/
+footer {
+}
+
+/** Texto **/
+a { 
+    text-decoration: none;
+	color:#7f3545;
+	font-weight: bold;
+}
+
+p {
+    text-align: justify;
+	line-height: 25px;
+}
+
+.faleingles {
+	width: 280px;
+	text-align: center;
+}
+
+.falefrances {
+	width: 290px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	font-size: 19px;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+
+/** Home **/
+.home {
+	width: 190px;
+	height: 180px;
+}
+
+/** Formulários **/
+#formulario { 
+    width: 260px;
+    text-align: center;	
+    margin: auto;
+}
+
+.buscap {
+	text-align: center;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 249px;
+    height: 60px;
+}
+
+select {
+    width: 254px;
+    height: 37px;
+}
+
+.enviar {
+    width: 254px;
+}
+
+/** Mapa **/
+.map {
+    height: 400px;
+    width: 98%;
+    margin: auto;
+	border-top: 2px solid #c33f3f;  
+	border-left: 2px solid #c98129; 
+	border-right: 2px solid #7db9ab; 
+	border-bottom: 2px solid #7f3545;
+}
+
+.coordenada, .link {
+	color: #c33f3f;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	padding-bottom: 10px;
+}
+
+.link{
+	clear: both;
+	font-size: 14px;
+	float: right;
+}
+
+.center{
+	text-align: center;
+	margin: auto;
+}
+
+.inst{
+width: 100%;
+display: table;
+border-bottom: 1px solid #ccc ;	
+}
+
+.esconde{
+	display: none;
+}
+
+
+/** Admin **/
+.editar {
+	width: 45px;
+	height: 45px;
+}	
+
+#bandeiras img{
+	width: 35px;
+	
+	
+}
+#bandeiras{
+	margin-top: -15px;
+	
+}
+
+#legenda{
+	font-size: 11px;
+}
+
+#legenda img{
+	width: 10px;
+}
+
+.arabe{
+	direction: rtl;
+}
+
+.arabe ul{
+	list-style-type: none;
+}
