@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Helping Hand </title>
+
+        <!-- Metas -->
+        <meta charset='utf-8'/>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+
+		
+
+    </head>
+    <body>
+        <div id="tudo">
+            <header>
+				<h2> 
+					<span class="menu-anchor"></span>
+					<img src="images/logo.png" />  
+					HELPING HAND
+
+				</h2>
+            </header>    
+    <menu>
+<ul>
+	        <li><a class='menu' href="index.html" id="m1"></a></li>
+        <li><a class='menu' href="mapa.html" id="m2"></a></li>
+        <li><a class='menu' href="entidades.html" id="m3"></a></li>
+        <li><a class='menu' href="sobre.html" id="m5"></a>
+        <li><a class='menu' href="registre.html" id="m6"></a></li>
+        <li><a class='menu' href="doe.html" id="m7"></a></li>
+        <li><a class='menu' href="contato.html" id="m8"></a></li>
+</ul>
+</menu>
+
+   
+
+
+<div id="conteudo">
+<div id="formulario" >
+		<h1 id="registro"></h1>
+		<span class="mensagem"><?php echo $mensagem;?></span>
+			<form method="post" action="http://helpinghandapp.com.br/fabrica_acao.php?controle=instituicao&acao=inserir">
+				<label for="categoria" id="r"></label>
+				<div id="categorias"></div>
+				<label for="nome" id="r1"></label>
+				<input type="text" name="nome" id="nome" value="" required/>
+				<label for="descricao" id="r2"></label>
+				<textarea name="descricao" id="descricao"></textarea>
+				<label for="email" id="r3"></label>
+				<input type="text" name="email" id="email" value="" required/>
+				<label for="telefone" id="r4"></label>
+				<input type="text" name="telefone" id="telefone" value=""required/>
+				<label for="endereco" id="r5">  </label>
+				<textarea name="endereco" id="endereco"></textarea>
+				<label for="cidade" id="r6"> </label>
+				<input type="text" name="cidade" id="cidade" value=""/>
+				<label for="estado" id="r7">  </label>
+				<select name="estado" id="estado" />
+					 <option value="Acre">Acre</option>
+					 <option value="Alagoas">Alagoas</option>
+					 <option value="Amapá">Amapá</option>
+					 <option value="AmazonasBahia">Amazonas</option>
+					 <option value="Bahia">Bahia</option>
+					 <option value="Ceará">Ceará</option>
+					 <option value="Distrito Federal">Distrito Federal</option>
+					 <option value="Goiás">Goiás</option>
+					 <option value="Espírito Santo">Espírito Santo</option>
+					 <option value="Maranhão">Maranhão</option>
+					 <option value="Mato Grosso">Mato Grosso</option>
+					 <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+					 <option value="Minas Gerais">Minas Gerais</option>
+					 <option value="Pará">Pará</option>
+					 <option value="Paraiba">Paraiba</option>
+					 <option value="Paraná">Paraná</option>
+					 <option value="Pernambuco">Pernambuco</option>
+					 <option value="Piauí">Piauí</option>
+					 <option value="Rio de Janeiro">Rio de Janeiro</option>
+					 <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+					 <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+					 <option value="Rondônia">Rondônia</option>
+					 <option value="Roraima">Roraima</option>
+					 <option value="São Paulo">São Paulo</option>
+					 <option value="Santa Catarina">Santa Catarina</option>
+					 <option value="Sergipe">Sergipe</option>
+					 <option value="Tocantins">Tocantins</option>
+					 </select>
+				<label for="redes_sociais" id="r8">  </label>
+				<textarea name="redes_sociais" id="redes_sociais"> </textarea>
+				<label for="atendimento" id="r9">  </label>
+				<textarea name="atendimento" id="atendimento"></textarea>
+				<label for="site" id="r10"> </label>
+				<input type="text" name="site" id="site" value=""/>
+				<label for="nome_solicitanet" id="r11">  </label>
+				<input type="text" name="nome_solicitante" id="nome_solicitante" value="" required/>
+				<label for="email_solicitante" id="r12">  </label>
+				<input type="text" name="email_solicitante" id="email_solicitante" value="" required/>
+				
+				<input class="enviar" type="submit" id="r13" />
+			</form>
+	</div>	
+
+	</div>
+	<footer>		
+	</footer>
+</div>
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/textos.js"></script>
+<script src="js/script.js"></script>
+<script>
+    window.console = window.console || function(t) {};
+    window.open = function(){ console.log('window.open is disabled.'); };
+    window.print = function(){ console.log('window.print is disabled.'); };
+    // Support hover state for mobile.
+    if (false) {
+      window.ontouchstart = function(){};
+    }
+ 
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+ 
+    $(document).ready(function () {
+    $('.menu-anchor').on('click touchstart', function (e) {
+        $('html').toggleClass('menu-active');
+        e.preventDefault();
+    });
+});
+    //@ sourceURL=pen.js
+  </script>
+	</body>
+</html>
+			
